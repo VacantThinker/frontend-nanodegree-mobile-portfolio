@@ -34,7 +34,19 @@
 
 <body>
 <header>
-    <a href="/"><img loading="lazy" src="img/profilepic.jpg"></a>
+    <a href="/">
+        <picture>
+            <source
+                    srcset="img/profilepic.webp"
+                    data-srcset="img/profilepic.webp"
+                    type="image/webp">
+            <img
+                    loading="lazy"
+                    src="img/profilepic.jpg"
+                    data-src="img/profilepic.jpg"
+                    alt="head image">
+        </picture>
+    </a>
     <p>Cameron Pittman<br><span>Course Developer</span></p>
 </header>
 
