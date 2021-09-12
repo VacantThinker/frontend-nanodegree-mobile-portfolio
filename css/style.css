@@ -27,6 +27,7 @@ header p span { font-size: 0.8em; font-weight: normal;}
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
 }
+.hero span {font-weight: bold;}
 
 .content { padding: 1em 1em; }
 .content li { width: 100%; list-style-type: none; font-size: 1.1em;}
