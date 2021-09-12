@@ -22,7 +22,7 @@ header p { font-size:1.5em; font-weight: bold; padding-left: 4em;}
 header p span { font-size: 0.8em; font-weight: normal;}
 
 .hero {
-  width: max-content;
+  width: 100%;
   padding: 2em; background-color: #f8f8f8; font-size:1.2em;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
