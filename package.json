@@ -5,9 +5,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "python -m http.server 8080",
-    "yarn-update": "yarn install"
+    "yarn-update": "yarn install",
+    "git-commit-push": "node git-push/script.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node": "latest"
+  }
 }
