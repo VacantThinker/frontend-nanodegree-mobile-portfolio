@@ -1,15 +1,17 @@
 // Measuring the Critical Rendering Path with Navigation Timing
 // https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp
 
-function logCRP() {
-  // var t = window.performance.timeOrigin;
-  //  var dcl = t.domContentLoadedEventStart - t.domLoading,
-  //   var complete = t.domComplete - t.domLoading;
-  var stats = document.getElementById("crp-stats");
-  // stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
-  stats.textContent = Math.floor(performance.now()) + 'ms';
-}
+var startTime;
+window.addEventListener("DOMContentLoaded", function (e) {
+  startTime = performance.now();
+})
 
 window.addEventListener("load", function(event) {
-  logCRP();
+  var endTime = performance.now();
+  var stats = document.getElementById("crp-stats");
+// stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
+  stats.textContent = 'DCL:'+Math.floor(startTime) + 'ms' +' - '+ 'load:' + Math.floor(endTime) + 'ms';
+  startTime = null;
+  endTime = null;
+  stats = null;
 });
