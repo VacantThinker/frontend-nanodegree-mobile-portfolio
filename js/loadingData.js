@@ -10,11 +10,11 @@ window.addEventListener("DOMContentLoaded", async () => {
                 document.querySelectorAll(".container_hero")[0]
                     .innerHTML = data.hero.html;
 
-                document.querySelectorAll(".container_content ul li a")
+                document.querySelectorAll(".container_content_li_right_a")
                     .forEach((ele, index)=>{
                         ele.innerHTML = data.content[index].aContent;
                     })
-                document.querySelectorAll(".container_content ul li p")
+                document.querySelectorAll(".container_content_li_right_p")
                     .forEach((ele, index)=>{
                         ele.innerHTML = data.content[index].pContent;
                     })
