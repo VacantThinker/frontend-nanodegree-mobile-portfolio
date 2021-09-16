@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", async () => {
                 return response.json();
             })
             .then(data => {
-                console.log("data", data)
+                // console.log("data", data)
                 document.querySelectorAll(".container_hero")[0]
                     .innerHTML = data.hero.html;
 
