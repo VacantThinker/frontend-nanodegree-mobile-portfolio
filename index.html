@@ -9,12 +9,12 @@
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
     <!--    <link rel="preload" href="//fonts.googleapis.com/css?family=Open+Sans:400,700"  onload="this.rel='stylesheet'">-->
-<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">-->
-<!--    <link rel="prefetch" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">-->
-<!--    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">-->
-<!--        <link rel="stylesheet" href="css/style.css" disabled>-->
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">-->
+    <!--    <link rel="prefetch" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">-->
+    <!--    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">-->
+    <!--        <link rel="stylesheet" href="css/style.css" disabled>-->
     <link href="css/print.css" rel="stylesheet" media="print">
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/style.css">
 
@@ -44,11 +44,7 @@
 
 <div class="container">
     <div class="hero">
-        <span>I love web development!</span>
-        This is a template for a simple portfolio. I decided to use it to
-        showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of
-        project that you want the world to see :)
-        Contact me: me@email.com
+
     </div>
 
     <div class="content">
@@ -65,8 +61,10 @@
                             data-src="img/2048.jpg"
                             alt="head image">
                 </picture>
-                <a href="project-2048.html">Build Your Own 2048!</a>
-                <p>I made my own version of 2048. How cool is that!?</p>
+                <div class="content_li_right">
+                    <a class="content_li_a" href="project-2048.html"></a>
+                    <p class="content_li_p"></p>
+                </div>
             </li>
 
             <li>
@@ -82,8 +80,10 @@
                             alt="head image"
                             style="height: 62px;">
                 </picture>
-                <a href="project-webperf.html">Website Performance Optimization</a>
-                <p>Hey... this class looks familiar.</p>
+                <div class="content_li_right">
+                    <a class="content_li_a" href="project-webperf.html"></a>
+                    <p class="content_li_p"></p>
+                </div>
             </li>
 
             <li>
@@ -99,8 +99,10 @@
                             alt="head image"
                             style="height: 61px;">
                 </picture>
-                <a href="project-mobile.html">Mobile Web Development</a>
-                <p>Making mobile apps isn't so hard after all.</p>
+                <div class="content_li_right">
+                    <a class="content_li_a" href="project-mobile.html"></a>
+                    <p class="content_li_p"></p>
+                </div>
             </li>
 
             <li>
@@ -116,8 +118,10 @@
                             alt="head image"
                             style="height: 75px;">
                 </picture>
-                <a href="views/pizza.html">Cam's Pizzeria</a>
-                <p>Who wants a performant pizza?</p>
+                <div class="content_li_right">
+                    <a class="content_li_a" href="views/pizza.html"></a>
+                    <p class="content_li_p"></p>
+                </div>
             </li>
         </ul>
     </div>
@@ -126,6 +130,7 @@
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
 </div>
+<script src="js/loadingData.js"></script>
 <script src="js/perfmatters.js"></script>
 </body>
 </html>
