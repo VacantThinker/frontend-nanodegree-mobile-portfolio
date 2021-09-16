@@ -19,7 +19,14 @@
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/style.css">
     <link rel="preload" as="script" href="js/perfmatters.js">
     <script defer>
+        window.addEventListener("DOMContentLoaded", function () {
+            console.log("1")
+            window.startTime = window.performance.now();
+        })
         window.onload = function () {
+            console.log("2")
+            window.endTime = window.performance.now();
+
             function f(srcStr) {
                 let e = document.createElement('script');
                 e.src = srcStr;
