@@ -52,7 +52,6 @@ header img {
 header p {
     font-size: 1.5em;
     font-weight: bold;
-    padding-left: 4em;
 }
 
 header p span {
@@ -112,7 +111,6 @@ header p span {
 }
 
 .container_content_li_left {
-    padding-right: 1em;
     width: 30%;
     display: flex;
     align-items: center;
@@ -169,6 +167,5 @@ footer span {
     }
 
     header p {
-        padding-left: 4.5em;
     }
 }
