@@ -19,7 +19,7 @@
 // });
 
 
-window.addEventListener("load", function () {
+// window.addEventListener("load", function () {
     function extracted() {
         if ('performance' in window) {
 
@@ -36,4 +36,4 @@ window.addEventListener("load", function () {
         }
     }
     extracted();
-})
+// })
