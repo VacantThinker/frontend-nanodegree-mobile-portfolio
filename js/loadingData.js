@@ -31,7 +31,7 @@ async function reqData() {
         })
 }
 
-reqData().then(null);
+reqData().then(r => null);
 
 // await reqData().then(r => null);
 // })

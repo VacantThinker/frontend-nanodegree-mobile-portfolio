@@ -20,14 +20,16 @@
     <link rel="preload" as="script" href="js/loadingData.js">
     <link rel="preload" as="script" href="js/perfmatters.js">
     <script defer>
+        window.onload = function () {
+            f('js/loadingData.js');
+            f('js/perfmatters.js');
+        }
         function f(url) {
             let a = document.createElement('script');
             a.src = url
             a.defer = true
             document.body.appendChild(a);
         }
-        f('js/loadingData.js');
-        f('js/perfmatters,js');
     </script>
 </head>
 
