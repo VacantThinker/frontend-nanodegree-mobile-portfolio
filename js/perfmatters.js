@@ -24,7 +24,15 @@ window.addEventListener("load", function () {
         if ('performance' in window) {
 
             const paintPerf =  performance.getEntriesByType('paint');
-            console.log(paintPerf)
+            let appendHtml = '';
+            paintPerf.forEach(value => {
+
+                let info = value.name +': '+ Math.ceil(value.startTime) + 'ms '
+                appendHtml += info;
+                // console.log(info)
+            })
+            document.getElementById("crp-stats")
+                .innerHTML = appendHtml;
         }
     }
     extracted();
