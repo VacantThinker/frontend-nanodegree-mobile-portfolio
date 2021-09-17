@@ -1,10 +1,13 @@
 {
+  "header": {
+    "info": "Cameron Pittman<br><span>Course Developer</span>"
+  },
   "hero": {
     "html": "<span>I love web development!</span>This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) Contact me: me@email.com"
   },
   "content": [
     {
-      "aContent": "<span>Build Your Own 2048!</span>",
+      "aContent": "Build Your Own 2048!",
       "pContent": "I made my own version of 2048. How cool is that!?"
     },
     {
