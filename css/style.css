@@ -162,10 +162,11 @@ footer span {
 
 /* Smartphones (portrait) */
 @media only screen and (max-width: 480px) {
-    body {
-        /*font-size: 12px;*/
+    .container_content > ul > li {
+        width: 100%;
+        flex-direction: column;
     }
-
-    header p {
+    .container_content_li_right{
+        width: 100%;
     }
 }
