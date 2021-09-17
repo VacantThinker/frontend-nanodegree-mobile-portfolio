@@ -7,6 +7,9 @@
 
 @font-face {
     font-display: swap;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -20,10 +23,7 @@ html {
 
 body {
     overflow: hidden;
-    font-size: 14px;
     line-height: 1.61;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
     color: #333;
     background: #fff;
     /*width: 100%;*/
@@ -133,7 +133,7 @@ header p span {
     flex-direction: column; /* 主轴为纵轴, 那么交叉轴为横轴 */
 }
 
-.container_content_li_right_a {
+.container_content_li_right a {
     width: 100%;
     height: 50%;
     flex: 1 1 100%;
@@ -142,7 +142,7 @@ header p span {
     justify-content: flex-start;
 }
 
-.container_content_li_right_p {
+.container_content_li_right p {
     width: 100%;
     height: 50%;
     flex: 1 1 100%;
