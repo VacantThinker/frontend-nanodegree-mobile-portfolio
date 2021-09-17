@@ -17,7 +17,18 @@
     <!--        <link rel="stylesheet" href="css/style.css" disabled>-->
     <link href="css/print.css" rel="stylesheet" media="print">
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/style.css">
-
+    <link rel="preload" as="script" href="js/loadingData.js">
+    <link rel="preload" as="script" href="js/perfmatters.js">
+    <script defer>
+        function f(url) {
+            let a = document.createElement('script');
+            a.src = url
+            a.defer = true
+            document.body.appendChild(a);
+        }
+        f('js/loadingData.js');
+        f('js/perfmatters,js');
+    </script>
 </head>
 
 <body>
@@ -134,7 +145,5 @@
     <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
 </footer>
 
-<script src="js/loadingData.js"></script>
-<script src="js/perfmatters.js"></script>
 </body>
 </html>
