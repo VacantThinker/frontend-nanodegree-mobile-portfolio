@@ -166,7 +166,7 @@ footer {
 
 footer #crp-stats {
     width: 100%;
-    height: 1px;
+    min-height: 1px;
 }
 
 /* Smartphones (portrait) */
