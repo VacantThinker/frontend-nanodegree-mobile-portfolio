@@ -17,3 +17,15 @@
 //   stats = null;
 //
 // });
+
+
+window.addEventListener("load", function () {
+    function extracted() {
+        if ('performance' in window) {
+
+            const paintPerf =  performance.getEntriesByType('paint');
+            console.log(paintPerf)
+        }
+    }
+    extracted();
+})
