@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", async () => {
+// window.addEventListener("DOMContentLoaded", async () => {
 
     async function reqData() {
         await fetch('text/data.json')
@@ -22,6 +22,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
             })
     }
+    reqData().then(null);
 
-    await reqData().then(r => null);
-})
+    // await reqData().then(r => null);
+// })
