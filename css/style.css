@@ -32,6 +32,8 @@ body {
     /*min-width: 360px;*/
     margin: 0 auto;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*-------------------------------------*/
@@ -164,7 +166,7 @@ footer {
     border-top: 1px solid #ccc;
 }
 
-footer #crp-stats {
+footer p {
     width: 100%;
     min-height: 1px;
 }
