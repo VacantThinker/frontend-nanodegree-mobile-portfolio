@@ -20,19 +20,22 @@
 
 
 // window.addEventListener("load", function () {
-    function extracted() {
-        if ('performance' in window) {
+function extracted() {
+    if ('performance' in window) {
 
-            const paintPerf =  performance.getEntriesByType('paint');
-            let appendHtml = '';
-            let value = paintPerf[1];
-
-                let info = value.name +': '+ Math.ceil(value.startTime) + 'ms '
-                appendHtml += info;
-                // console.log(info)
+        const paintPerf = performance.getEntriesByType('paint');
+        let appendHtml = '';
+        let value = paintPerf[1];
+        if (value.hasOwnProperty("name")){
+            let info = value.name + ': ' + Math.ceil(value.startTime) + 'ms '
+            appendHtml += info;
+            // console.log(info)
             document.getElementById("crp-stats")
                 .innerHTML = appendHtml;
+
         }
     }
-    extracted();
+}
+
+extracted();
 // })
