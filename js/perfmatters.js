@@ -27,7 +27,6 @@
             let appendHtml = '';
             let value = paintPerf[1];
 
-
                 let info = value.name +': '+ Math.ceil(value.startTime) + 'ms '
                 appendHtml += info;
                 // console.log(info)
