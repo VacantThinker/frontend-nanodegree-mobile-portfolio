@@ -14,20 +14,7 @@
 <!--          onload="this.rel='stylesheet'">-->
     <link href="css/print.css" rel="stylesheet" media="print">
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/style.css">
-
-    <link rel="preload" as="script" href="js/perfmatters.js">
-    <script defer>
-        async function f(url) {
-            let e = document.createElement('script');
-            e.src = url;
-            e.defer = true;
-            document.body.appendChild(e);
-            e = null;
-        }
-        document.onload = async function () {
-            await f("js/perfmatters.js");
-        }
-    </script>
+    <script defer src="js/perfmatters.js"></script>
 </head>
 
 <body>
