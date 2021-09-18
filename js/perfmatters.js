@@ -25,12 +25,12 @@
 
             const paintPerf =  performance.getEntriesByType('paint');
             let appendHtml = '';
-            paintPerf.forEach(value => {
+            let value = paintPerf[1];
+
 
                 let info = value.name +': '+ Math.ceil(value.startTime) + 'ms '
                 appendHtml += info;
                 // console.log(info)
-            })
             document.getElementById("crp-stats")
                 .innerHTML = appendHtml;
         }
