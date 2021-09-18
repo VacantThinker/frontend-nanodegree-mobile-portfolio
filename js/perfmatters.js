@@ -26,7 +26,7 @@ function extracted() {
         const paintPerf = performance.getEntriesByType('paint');
         let appendHtml = '';
         let value = paintPerf[1];
-        if (value.hasOwnProperty("name")){
+        if (value.name !== undefined){
             let info = value.name + ': ' + Math.ceil(value.startTime) + 'ms '
             appendHtml += info;
             // console.log(info)
