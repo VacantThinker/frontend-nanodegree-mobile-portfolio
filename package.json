@@ -4,11 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "python -m http.server 8080",
+    "start": "vite",
     "yarn-update": "yarn install",
     "git-push": " git add . && git commit -m 'update' && git push "
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vite": "latest"
+  }
 }

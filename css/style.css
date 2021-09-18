@@ -2,13 +2,10 @@
     margin: 0;
     padding: 0;
     border: 0;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 html {
-    /*font-size: 100%;*/
-    /*overflow: hidden;*/
-    /*overflow: hidden;*/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: none;
@@ -19,10 +16,12 @@ body {
     line-height: 1.61;
     color: #333;
     background: #fff;
-    max-width: 720px;
+    max-width: 960px;
     min-width: 360px;
     min-height: 100vh;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /*-------------------------------------*/
@@ -34,15 +33,8 @@ header {
 
 header img {
     border-radius: 40px;
-    float: left;
     width: 70px;
     height: 70px;
-}
-
-header p {
-}
-
-header p span {
 }
 
 /*-------------------------------*/
@@ -52,7 +44,7 @@ header p span {
     /*height: 80%;*/
 }
 
-.container_hero {
+.hero {
     background-color: #f8f8f8;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
@@ -62,66 +54,68 @@ header p span {
 }
 
 
-.container_content {
-
-    /*height: 70%;*/
+.content {
 }
 
-.container_content > ul {
-
-    /*height: 95%;*/
+.content > ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.container_content > ul > li {
+.content > ul > li {
     min-height: 50px;
-    clear: both;
+    display: grid;
+    grid-template-columns: minmax(100px, 120px) 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "a b"
+        "a c";
 }
 
-.container_content_li_left {
-    width: 30%;
-    float: left;
-}
-
-.container_content_li_left picture img {
+li picture {
+    grid-area: a;
     width: 100px;
-    height: 50px;
+    height: 70px;
 }
 
-.container_content_li_right {
-    width: 70%;
-    float: right;
+li a {
+    grid-area: b;
 }
 
-.container_content_li_right a {
-
-    height: 50%;
-}
-
-.container_content_li_right p {
-
-    height: 50%;
+li p {
+    grid-area: c;
 }
 
 /*------------------------------------------*/
 footer {
-    clear: both;
-    height: 5%;
     border-top: 1px solid #ccc;
 }
 
 footer span {
-    float: right;
+    display: block;
+    min-width: 100%;
+    min-height: 10px;
 }
 
 /* Smartphones (portrait) */
-@media only screen and (max-width: 480px) {
-    .container_content > ul > li {
-
+@media only screen and (max-width: 540px) {
+    .content ul li {
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        min-height: 120px;
+    }
+    li picture {
+        grid-area: unset;
     }
 
-    .container_content_li_right {
+    li a {
+        grid-area: unset;
+    }
 
+    li p {
+        grid-area: unset;
     }
 }
