@@ -8,10 +8,10 @@
     <title>Cameron Pittman: Portfolio</title>
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<!--    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style"-->
-<!--          onload="this.rel='stylesheet'">-->
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style"-->
+    <!--          onload="this.rel='stylesheet'">-->
     <link href="css/print.css" rel="stylesheet" media="print">
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/style.css">
     <script defer src="js/perfmatters.js"></script>
@@ -19,24 +19,19 @@
 
 <body>
 <header>
-    <a href="/">
-        <picture>
-            <source
-                    srcset="img/profilepic.webp"
-                    data-srcset="img/profilepic.webp"
-                    type="image/webp">
-            <img
-                    loading="lazy"
-                    src="img/profilepic.jpg"
-                    data-src="img/profilepic.jpg"
-                    alt="head image">
-        </picture>
-    </a>
-    <p>
-        Cameron Pittman
-        <br>
-        <span>Course Developer</span>
-    </p>
+    <picture>
+        <source
+                srcset="img/profilepic.webp"
+                data-srcset="img/profilepic.webp"
+                type="image/webp">
+        <img
+                loading="lazy"
+                src="img/profilepic.jpg"
+                data-src="img/profilepic.jpg"
+                alt="head image">
+    </picture>
+    <span class="header_name">Cameron Pittman</span>
+    <span class="header_job">Course Developer</span>
 </header>
 
 <div class="container">
@@ -51,71 +46,71 @@
     <div class="content">
         <ul>
             <li>
-                    <picture>
-                        <source
-                                srcset="img/2048.webp"
-                                data-srcset="img/2048.webp"
-                                type="image/webp">
-                        <img
-                                loading="lazy"
-                                src="img/2048.jpg"
-                                data-src="img/2048.jpg"
-                                alt="head image">
-                    </picture>
+                <picture>
+                    <source
+                            srcset="img/2048.webp"
+                            data-srcset="img/2048.webp"
+                            type="image/webp">
+                    <img
+                            loading="lazy"
+                            src="img/2048.jpg"
+                            data-src="img/2048.jpg"
+                            alt="head image">
+                </picture>
 
-                    <a href="project-2048.html">Build Your Own 2048!</a>
-                    <p>I made my own version of 2048. How cool is that!?</p>
+                <a href="project-2048.html">Build Your Own 2048!</a>
+                <p>I made my own version of 2048. How cool is that!?</p>
             </li>
 
             <li>
-                    <picture>
-                        <source
-                                srcset="img/wpo.webp"
-                                data-srcset="img/wpo.webp"
-                                type="image/webp">
-                        <img
-                                loading="lazy"
-                                src="img/wpo.jpg"
-                                data-src="img/wpo.jpg"
-                                alt="head image">
-                    </picture>
-                    <a href="project-webperf.html">Website Performance Optimization</a>
-                    <p>Hey... this class looks familiar.</p>
+                <picture>
+                    <source
+                            srcset="img/wpo.webp"
+                            data-srcset="img/wpo.webp"
+                            type="image/webp">
+                    <img
+                            loading="lazy"
+                            src="img/wpo.jpg"
+                            data-src="img/wpo.jpg"
+                            alt="head image">
+                </picture>
+                <a href="project-webperf.html">Website Performance Optimization</a>
+                <p>Hey... this class looks familiar.</p>
 
             </li>
 
             <li>
-                    <picture>
-                        <source
-                                srcset="img/mobile.webp"
-                                data-srcset="img/mobile.webp"
-                                type="image/webp">
-                        <img
-                                loading="lazy"
-                                src="img/mobile.jpg"
-                                data-src="img/mobile.jpg"
-                                alt="head image">
-                    </picture>
+                <picture>
+                    <source
+                            srcset="img/mobile.webp"
+                            data-srcset="img/mobile.webp"
+                            type="image/webp">
+                    <img
+                            loading="lazy"
+                            src="img/mobile.jpg"
+                            data-src="img/mobile.jpg"
+                            alt="head image">
+                </picture>
 
-                    <a href="project-mobile.html">Mobile Web Development</a>
-                    <p>Making mobile apps isn't so hard after all.</p>
+                <a href="project-mobile.html">Mobile Web Development</a>
+                <p>Making mobile apps isn't so hard after all.</p>
             </li>
 
             <li>
-                    <picture>
-                        <source
-                                srcset="img/pizz1.webp"
-                                data-srcset="img/pizz1.webp"
-                                type="image/webp">
-                        <img
-                                loading="lazy"
-                                src="img/pizz.jpg"
-                                data-src="img/pizz.jpg"
-                                alt="head image">
-                    </picture>
+                <picture>
+                    <source
+                            srcset="img/pizz1.webp"
+                            data-srcset="img/pizz1.webp"
+                            type="image/webp">
+                    <img
+                            loading="lazy"
+                            src="img/pizz.jpg"
+                            data-src="img/pizz.jpg"
+                            alt="head image">
+                </picture>
 
-                    <a href="views/pizza.html">Cam's Pizzeria</a>
-                    <p>Who wants a performant pizza?</p>
+                <a href="views/pizza.html">Cam's Pizzeria</a>
+                <p>Who wants a performant pizza?</p>
             </li>
         </ul>
     </div>

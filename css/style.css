@@ -20,21 +20,38 @@ body {
     min-width: 360px;
     min-height: 100vh;
     margin: 0 auto;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
 /*-------------------------------------*/
 
-header {
-    min-height: 70px;
+header{
     color: #C90B0B;
+    display: grid;
+    grid-template-columns: minmax(70px, 74px) 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "a b"
+        "a c";
 }
-
-header img {
-    border-radius: 40px;
+header picture {
+    grid-area: a;
     width: 70px;
     height: 70px;
+    margin-bottom: 10px;
+}
+header picture img {
+    border-radius: 70px;
+}
+.header_name{
+    grid-area: b;
+    display: inline-block;
+}
+.header_job{
+    grid-area: c;
+    display: inline-block;
 }
 
 /*-------------------------------*/
@@ -55,6 +72,7 @@ header img {
 
 
 .content {
+    margin-top: 10px;
 }
 
 .content > ul {
@@ -107,6 +125,7 @@ footer span {
         flex-wrap: wrap;
         min-height: 120px;
     }
+
     li picture {
         grid-area: unset;
     }
