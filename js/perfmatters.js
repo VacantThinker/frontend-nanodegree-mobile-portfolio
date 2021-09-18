@@ -8,8 +8,8 @@ function extracted() {
 
         const paintPerf = performance.getEntriesByType('paint');
         let appendHtml = '';
-        let value = paintPerf[1];
-        if (value.name !== undefined){
+        let value = paintPerf.length > 0 && paintPerf[1];
+        if (value.name !== undefined) {
             let info = value.name + ': ' + Math.ceil(value.startTime) + 'ms '
             appendHtml += info;
             // console.log(info)

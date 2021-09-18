@@ -3,7 +3,6 @@
   "version": "1.0.4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vite",
     "yarn-update": "yarn install",
     "git-push": " git add . && git commit -m 'update' && git push "
