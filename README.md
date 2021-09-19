@@ -59,6 +59,7 @@ Cumulative Layout Shift
 
   - 4 html
     - use html-minifier minify your html. make it in one line.
+      - sample code in ".nodejs/index.js"
 
 ---
 
