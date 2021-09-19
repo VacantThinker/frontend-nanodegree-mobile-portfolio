@@ -39,12 +39,18 @@ Cumulative Layout Shift
 ---
 
 ### optimization step
- 
-  - 1 put style in your html
-    - download googlefonts put them into style tag
-  - 2 make img element have width and height, all
-  - 3 put script before the </body> tag
-  - 4 use flexbox and grid layout your html
+  
+  - 1 style
+    - 1 put style in your html
+      - download googlefonts put them into style tag
+    - 2 use flexbox and grid layout your html
+  
+  - 2 image
+    - 1 make img element have width and height, all
+    - 2 convert image to webp
+
+  - 3 script
+    - 1 put script before the </body> tag
 
 ---
 
