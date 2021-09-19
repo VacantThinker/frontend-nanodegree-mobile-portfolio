@@ -3,7 +3,7 @@
 
 > https://vacantthinker.github.io/frontend-nanodegree-mobile-portfolio/
 
-####mobile
+####mobile (100)
 ```text
 First Contentful Paint
 0.8 s
@@ -20,7 +20,7 @@ Cumulative Layout Shift
 
 ```
 
-####desktop
+####desktop (100)
 ```text
 First Contentful Paint
 0.2 s
