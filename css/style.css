@@ -68,6 +68,7 @@ header picture img {
 
 .content {
     margin-top: 10px;
+    height: auto;
 }
 
 .content > ul {
@@ -78,6 +79,8 @@ header picture img {
 }
 
 .content > ul > li {
+    /*border-bottom: 1px solid orange;*/
+    /*border-radius: 1px;*/
     min-height: 50px;
     display: grid;
     grid-template-columns: minmax(100px, 120px) 1fr;
@@ -121,13 +124,14 @@ footer span {
     body{
     }
     body > .container{
-        grid-template-rows: 72px auto 598px 52px;
+        grid-template: 72px auto 580px 52px / 1fr;
         min-height: 940px;
     }
 
-    .content ul li {
+    .content > ul > li {
+        min-height: 140px;
         display: grid;
-        grid-template-rows: minmax(70px, 70px) 1fr 2fr;
+        grid-template-rows: minmax(70px, 72px) 1fr 2fr;
         grid-template-columns: 1fr;
         grid-template-areas:
         "a"
