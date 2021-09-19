@@ -1,18 +1,20 @@
 
 ## my PageSpeed Insights Score
 
+> https://vacantthinker.github.io/frontend-nanodegree-mobile-portfolio/
+
 ####mobile
 ```text
 First Contentful Paint
-0.8 秒
+0.8 s
 Speed Index
-0.8 秒
+0.8 s
 Largest Contentful Paint
-0.8 秒
+0.8 s
 Time to Interactive
-0.8 秒
+0.8 s
 Total Blocking Time
-0 毫秒
+0 ms
 Cumulative Layout Shift
 0
 
@@ -21,18 +23,27 @@ Cumulative Layout Shift
 ####desktop
 ```text
 First Contentful Paint
-0.2 秒
+0.2 s
 Speed Index
-0.2 秒
+0.2 s
 Largest Contentful Paint
-0.2 秒
+0.2 s
 Time to Interactive
-0.2 秒
+0.2 s
 Total Blocking Time
-0 毫秒
+0 ms
 Cumulative Layout Shift
 0
 ```
+
+---
+
+### optimization step
+ 
+  - 1 put style in your html
+  - 2 make img element have width and height, all
+  - 3 put script before the </body> tag
+  - 4 use flexbox and grid layout your html
 
 ---
 
