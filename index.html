@@ -13,8 +13,169 @@
     <!--    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style"-->
     <!--          onload="this.rel='stylesheet'">-->
     <link href="css/print.css" rel="stylesheet" media="print">
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/style.css">
+<!--    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/style.css">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            color: #333;
+            background: #fff;
+            min-width: 360px;
+            width: 100%;
+            height: auto;
+            min-height: 540px;
+            display: grid;
+            grid-template: 1fr / 1fr;
+            place-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            min-height: 520px;
+            display: grid;
+            grid-template: 72px auto 290px 52px / 1fr;
+        }
+
+        /*-------------------------------------*/
+
+        header {
+            color: #C90B0B;
+            display: grid;
+            grid-template-columns: minmax(70px, 74px) 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+        "a b"
+        "a c";
+        }
+
+        header picture {
+            grid-area: a;
+            margin-bottom: 1px;
+        }
+
+        header picture img {
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+        }
+
+        .header_name {
+            grid-area: b;
+            display: inline-block;
+        }
+
+        .header_job {
+            grid-area: c;
+            display: inline-block;
+        }
+
+        /*-------------------------------*/
+
+        .hero {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+        }
+
+
+        .content {
+            margin-top: 10px;
+            height: auto;
+        }
+
+        .content > ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .content > ul > li {
+            /*border-bottom: 1px solid orange;*/
+            /*border-radius: 1px;*/
+            min-height: 50px;
+            display: grid;
+            grid-template-columns: minmax(100px, 120px) 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+        "a b"
+        "a c";
+        }
+
+        li picture {
+            grid-area: a;
+            height: 70px;
+        }
+
+        li picture img {
+            width: 100px;
+            height: 50px;
+        }
+
+        li a {
+            grid-area: b;
+        }
+
+        li p {
+            grid-area: c;
+        }
+
+        /*------------------------------------------*/
+        footer {
+            border-top: 1px solid #ccc;
+            height: 52px;
+        }
+
+        footer span {
+            display: block;
+            min-height: 10px;
+        }
+
+        @media screen and (max-width: 360px) {
+            body > .container {
+                min-height: 940px;
+            }
+        }
+
+        /* Smartphones (portrait) */
+        @media screen and (max-width: 560px) {
+            body > .container {
+                grid-template: 72px auto 580px 52px / 1fr;
+                min-height: 800px;
+            }
+            .content > ul > li {
+                min-height: 140px;
+                display: grid;
+                grid-template-rows: minmax(70px, 72px) 1fr 2fr;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "c";
+            }
+
+            li picture {
+                grid-area: a;
+            }
+
+            li a {
+                grid-area: b;
+            }
+
+            li p {
+                grid-area: c;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
