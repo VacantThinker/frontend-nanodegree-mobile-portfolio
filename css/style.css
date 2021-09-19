@@ -11,6 +11,7 @@ body {
     min-width: 320px;
     width: 100%;
     height: auto;
+    min-height: 540px;
     display: grid;
     grid-template: 1fr / 1fr;
     place-items: center;
@@ -121,7 +122,6 @@ footer span {
 
 @media screen and (max-width: 360px) {
     body > .container {
-        grid-template: 72px auto 580px 52px / 1fr;
         min-height: 940px;
     }
 }
