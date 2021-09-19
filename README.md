@@ -48,6 +48,9 @@ Cumulative Layout Shift
   - 2 image
     - 1 make img element have width and height, all
     - 2 convert image to webp
+    - 3 use picture element to responsive your website
+    - 4 use loading=lazy on img element
+      - if loading=lazy is not working, please use IntersectionObserver API. detect the element is shown?
 
   - 3 script
     - 1 put script before the </body> tag
