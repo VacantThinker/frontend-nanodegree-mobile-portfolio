@@ -1,13 +1,38 @@
 
-### performance step
+## my PageSpeed Insights Score
 
-#### link=preload css fonts
+####mobile
+```text
+First Contentful Paint
+0.8 秒
+Speed Index
+0.8 秒
+Largest Contentful Paint
+0.8 秒
+Time to Interactive
+0.8 秒
+Total Blocking Time
+0 毫秒
+Cumulative Layout Shift
+0
 
-#### lazy-loading img
+```
 
-#### put script tag in </body> before
-
-#### loading html text with fetch api
+####desktop
+```text
+First Contentful Paint
+0.2 秒
+Speed Index
+0.2 秒
+Largest Contentful Paint
+0.2 秒
+Time to Interactive
+0.2 秒
+Total Blocking Time
+0 毫秒
+Cumulative Layout Shift
+0
+```
 
 ---
 
