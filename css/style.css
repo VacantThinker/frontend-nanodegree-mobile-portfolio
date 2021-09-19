@@ -119,17 +119,27 @@ footer span {
     min-height: 10px;
 }
 
-/* Smartphones (portrait) */
-@media only screen and (max-width: 540px) {
-    body{
-    }
-    body > .container{
+@media screen and (max-width: 360px) {
+    body > .container {
         grid-template: 72px auto 580px 52px / 1fr;
         min-height: 940px;
     }
+    .content > ul > li{
+        min-height: 140px;
+    }
+}
+
+@media screen and (max-width: 540px) {
 
     .content > ul > li {
-        min-height: 140px;
+        min-height: 70px;
+    }
+}
+
+/* Smartphones (portrait) */
+@media screen and (max-width: 540px) and (max-width: 360px) {
+
+    .content > ul > li {
         display: grid;
         grid-template-rows: minmax(70px, 72px) 1fr 2fr;
         grid-template-columns: 1fr;
