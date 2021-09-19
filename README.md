@@ -56,6 +56,9 @@ Cumulative Layout Shift
   - 3 script
     - 1 put script before the </body> tag
 
+  - 4 html
+    - use html-minifier minify your html. make it in one line.
+
 ---
 
 ## Website Performance Optimization portfolio project
