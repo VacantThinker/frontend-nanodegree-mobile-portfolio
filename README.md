@@ -56,6 +56,7 @@ Cumulative Layout Shift
 
   - 3 script
     - 1 put script before the </body> tag
+    - 2 add async
 
   - 4 html
     - use html-minifier minify your html. make it in one line.
