@@ -9,8 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "vite": "latest"
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "vite": "latest",
+    "html-minifier": "latest"
   }
 }

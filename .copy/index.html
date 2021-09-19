@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="performance web demo">
+    <meta name="author" content="vacantthinker">
+    <title>Cameron Pittman: Portfolio</title>
+
+    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
+    <!--        <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style"-->
+    <!--              onload="this.rel='stylesheet'">-->
+    <link href="css/print.css" rel="stylesheet" media="print">
+    <!--    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/style.css">-->
+    <style>
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* greek-ext */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* vietnamese */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* greek-ext */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* vietnamese */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #333;
+            background: #fff;
+            min-width: 360px;
+            width: 100%;
+            height: auto;
+            min-height: 540px;
+            display: grid;
+            grid-template: 1fr / 1fr;
+            place-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            min-height: 520px;
+            display: grid;
+            grid-template: 72px auto 290px 52px / 1fr;
+            position: relative;
+        }
+        .github {
+            width: 150px;
+            height: 30px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            /*border: 1px solid orange;*/
+            text-align: center;
+        }
+
+        .github a {
+            text-decoration: none;
+        }
+
+        .github a:hover {
+            color: #C90B0B;
+            font-size: 14px;
+        }
+        /*-------------------------------------*/
+
+        header {
+            color: #C90B0B;
+            display: grid;
+            grid-template-columns: minmax(70px, 74px) 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+        "a b"
+        "a c";
+        }
+
+        header picture {
+            grid-area: a;
+            margin-bottom: 1px;
+        }
+
+        header picture img {
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+        }
+
+        .header_name {
+            grid-area: b;
+            display: inline-block;
+        }
+
+        .header_job {
+            grid-area: c;
+            display: inline-block;
+        }
+
+        /*-------------------------------*/
+
+        .hero {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+        }
+
+
+        .content {
+            margin-top: 10px;
+            height: auto;
+        }
+
+        .content > ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .content > ul > li {
+            /*border-bottom: 1px solid orange;*/
+            /*border-radius: 1px;*/
+            min-height: 50px;
+            display: grid;
+            grid-template-columns: minmax(100px, 120px) 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+        "a b"
+        "a c";
+        }
+
+        li picture {
+            grid-area: a;
+            height: 70px;
+        }
+
+        li picture img {
+            width: 100px;
+            height: 50px;
+        }
+
+        li a {
+            grid-area: b;
+        }
+
+        li p {
+            grid-area: c;
+        }
+
+        /*------------------------------------------*/
+        footer {
+            border-top: 1px solid #ccc;
+            height: 52px;
+        }
+
+        footer span {
+            display: block;
+            min-height: 10px;
+        }
+
+        @media screen and (max-width: 360px) {
+            body > .container {
+                min-height: 940px;
+            }
+        }
+
+        /* Smartphones (portrait) */
+        @media screen and (max-width: 560px) {
+            .github {
+                width: 100px;
+                height: 60px;
+            }
+
+            body > .container {
+                grid-template: 72px auto 580px 52px / 1fr;
+                min-height: 800px;
+            }
+
+            .content > ul > li {
+                min-height: 140px;
+                display: grid;
+                grid-template-rows: minmax(70px, 72px) 1fr 2fr;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "c";
+            }
+
+            li picture {
+                grid-area: a;
+            }
+
+            li a {
+                grid-area: b;
+            }
+
+            li p {
+                grid-area: c;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="github">
+        <a target="_blank" href="https://github.com/VacantThinker/frontend-nanodegree-mobile-portfolio">
+            Star Me in Github
+        </a>
+    </div>
+    <header>
+        <picture>
+            <source
+                    srcset="img/profilepic.webp"
+                    data-srcset="img/profilepic.webp"
+                    type="image/webp">
+            <img
+                    loading="lazy"
+                    src="img/profilepic.jpg"
+                    data-src="img/profilepic.jpg"
+                    alt="head image">
+        </picture>
+        <span class="header_name">Cameron Pittman</span>
+        <span class="header_job">Course Developer</span>
+    </header>
+
+    <!--<div class="container">-->
+    <div class="hero">
+        <span>I love web development!</span>
+        This is a template for a simple portfolio. I decided to use it to
+        showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of
+        project that you want the world to see :)
+        Contact me: me@email.com
+    </div>
+
+    <div class="content">
+        <ul>
+            <li>
+                <picture>
+                    <source
+                            srcset="img/2048.webp"
+                            data-srcset="img/2048.webp"
+                            type="image/webp">
+                    <img
+                            loading="lazy"
+                            src="img/2048.jpg"
+                            data-src="img/2048.jpg"
+                            alt="head image">
+                </picture>
+
+                <a href="project-2048.html">Build Your Own 2048!</a>
+                <p>I made my own version of 2048. How cool is that!?</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source
+                            srcset="img/wpo.webp"
+                            data-srcset="img/wpo.webp"
+                            type="image/webp">
+                    <img
+                            loading="lazy"
+                            src="img/wpo.jpg"
+                            data-src="img/wpo.jpg"
+                            alt="head image">
+                </picture>
+                <a href="project-webperf.html">Website Performance Optimization</a>
+                <p>Hey... this class looks familiar.</p>
+
+            </li>
+
+            <li>
+                <picture>
+                    <source
+                            srcset="img/mobile.webp"
+                            data-srcset="img/mobile.webp"
+                            type="image/webp">
+                    <img
+                            loading="lazy"
+                            src="img/mobile.jpg"
+                            data-src="img/mobile.jpg"
+                            alt="head image">
+                </picture>
+
+                <a href="project-mobile.html">Mobile Web Development</a>
+                <p>Making mobile apps isn't so hard after all.</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source
+                            srcset="img/pizz1.webp"
+                            data-srcset="img/pizz1.webp"
+                            type="image/webp">
+                    <img
+                            loading="lazy"
+                            src="img/pizz.jpg"
+                            data-src="img/pizz.jpg"
+                            alt="head image">
+                </picture>
+
+                <a href="views/pizza.html">Cam's Pizzeria</a>
+                <p>Who wants a performant pizza?</p>
+            </li>
+        </ul>
+    </div>
+
+    <!--</div>-->
+    <footer>
+        <p>&copy; Web Performance 2014</p>
+        <span id="crp-stats"></span>
+    </footer>
+</div>
+
+<script src="js/perfmatters.js"></script>
+</body>
+</html>
