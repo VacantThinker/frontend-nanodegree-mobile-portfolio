@@ -18,23 +18,24 @@
 </head>
 
 <body>
-<header>
-    <picture>
-        <source
-                srcset="img/profilepic.webp"
-                data-srcset="img/profilepic.webp"
-                type="image/webp">
-        <img
-                loading="lazy"
-                src="img/profilepic.jpg"
-                data-src="img/profilepic.jpg"
-                alt="head image">
-    </picture>
-    <span class="header_name">Cameron Pittman</span>
-    <span class="header_job">Course Developer</span>
-</header>
+<div class="container">
+    <header>
+        <picture>
+            <source
+                    srcset="img/profilepic.webp"
+                    data-srcset="img/profilepic.webp"
+                    type="image/webp">
+            <img
+                    loading="lazy"
+                    src="img/profilepic.jpg"
+                    data-src="img/profilepic.jpg"
+                    alt="head image">
+        </picture>
+        <span class="header_name">Cameron Pittman</span>
+        <span class="header_job">Course Developer</span>
+    </header>
 
-<!--<div class="container">-->
+    <!--<div class="container">-->
     <div class="hero">
         <span>I love web development!</span>
         This is a template for a simple portfolio. I decided to use it to
@@ -115,11 +116,14 @@
         </ul>
     </div>
 
-<!--</div>-->
-<footer>
-    <p>&copy; Web Performance 2014</p>
-    <span id="crp-stats"></span>
-</footer>
+    <!--</div>-->
+    <footer>
+        <p>&copy; Web Performance 2014</p>
+        <span id="crp-stats"></span>
+    </footer>
+
+</div>
+
 <script src="js/perfmatters.js"></script>
 </body>
 </html>
