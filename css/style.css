@@ -119,11 +119,18 @@ footer span {
     min-height: 10px;
 }
 
+@media screen and (max-width: 360px) {
+    body > .container {
+        grid-template: 72px auto 580px 52px / 1fr;
+        min-height: 940px;
+    }
+}
+
 /* Smartphones (portrait) */
 @media screen and (max-width: 560px) {
     body > .container {
         grid-template: 72px auto 580px 52px / 1fr;
-        min-height: 940px;
+        min-height: 800px;
     }
     .content > ul > li {
         min-height: 140px;
