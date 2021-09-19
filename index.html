@@ -168,6 +168,7 @@
             min-height: 520px;
             display: grid;
             grid-template: 72px auto 290px 52px / 1fr;
+            position: relative;
         }
 
         /*-------------------------------------*/
@@ -302,12 +303,33 @@
             }
 
         }
+        .github{
+            width: 150px;
+            height: 30px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            /*border: 1px solid orange;*/
+            text-align: center;
+        }
+        .github a {
+            text-decoration: none;
+        }
+        .github a:hover{
+            color: #C90B0B;
+            font-size: 14px;
+        }
 
     </style>
 </head>
 
 <body>
 <div class="container">
+    <div class="github">
+        <a target="_blank" href="https://github.com/VacantThinker/frontend-nanodegree-mobile-portfolio">
+            Star Me in Github
+        </a>
+    </div>
     <header>
         <picture>
             <source
@@ -410,7 +432,6 @@
         <p>&copy; Web Performance 2014</p>
         <span id="crp-stats"></span>
     </footer>
-
 </div>
 
 <script src="js/perfmatters.js"></script>
