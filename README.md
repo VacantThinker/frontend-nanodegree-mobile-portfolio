@@ -40,10 +40,11 @@ Cumulative Layout Shift
 
 ### optimization step
   
-  - 1 style
+  - 1 style 
     - 1 put style in your html
       - download googlefonts put them into style tag
     - 2 use flexbox and grid layout your html
+    - (this step make layout is right. you can use fetch api request your data)
   
   - 2 image
     - 1 make img element have width and height, all
