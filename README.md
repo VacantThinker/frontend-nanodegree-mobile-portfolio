@@ -55,7 +55,7 @@ Cumulative Layout Shift
       - if loading=lazy is not working, please use IntersectionObserver API. detect the element is shown?
 
   - 3 script
-    - 1 put script before the </body> tag
+    - 1 put script before the '</body>' tag
     - 2 add async
 
   - 4 html
